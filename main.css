@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #1E90FF
+}
+
+body {
+    background: #F0F8FF;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    background: #c8e9f5;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #444444;
+}
+
+.navigation .logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.navigation .logo span {
+    color: var(--primary-color);
+}
+
+.navigation a:hover {
+    background: #a3d3e4;
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.left-col .subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .3em;
+}
+
+.left-col h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #cbe5ee;
+    box-shadow: 0 5px 10px gray;
+    background-color: whitesmoke;
+    text-align: center;
+    overflow: hidden;
+}
+
+.uomTrack th {
+    cursor: pointer;
+}
+
+.uomTrack .th-sort-asc::after {
+    content: "\25b4";
+}
+
+.uomTrack .th-sort-desc::after {
+    content: "\25be";
+  }
+
+  .uomTrack .th-sort-asc::after,
+  .uomTrack .th-sort-desc::after {
+    margin-left: 5px;
+  }
+
+  .uomTrack .th-sort-asc,
+  .uomTrack .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+thead {
+    box-shadow: 0 5px 10px gray;
+}
+
+tbody {
+    background-color: #e4f0f5;
+}
+
+th {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #cbe5ee;
+}
+
+thead th:nth-child(1) {
+    width: 5%;
+}
+
+thead th:nth-child(2) {
+    width: 35%;
+}
+
+thead th:nth-child(3) {
+    width: 30%;
+}
+
+thead th:nth-child(4) {
+    width: 20%;
+}
+
+button {
+    display:inline-block;
+    padding-left:0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    transition: all 0.2s;
+}
+
+button :hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+section.feature-section {
+    background: #a3d3e4;
+    color: whitesmoke;
+}
+
+ul.features-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: .1em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: (minmax(19rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+.features-list a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+#rankFilter {
+    border: 1px soled white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#participantFilter {
+    border: 1px soled white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#countryFilter {
+    border: 1px soled white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#timeFilter {
+    border: 1px soled white;
+    border-radius: 10px;
+    text-align: center;
+}
+

@@ -1,0 +1,18 @@
+{
+    "name": "Tokyo 2020",
+    "short_name": "ATHLETICS MEN'S 100M RESULTS",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "icons": [
+        {
+            "scr": "copy-icon.svg",
+            "type": "image/svg"
+        },
+        {
+            "scr": "delete-icon.svg",
+            "type": "image/svg"
+        }
+    ]
+}
