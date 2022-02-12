@@ -5,7 +5,9 @@ const assets = [
   "/uomTrack/uomTrack.js",
   "/uomTrack/manifest.json",
   "/uomTrack/copy-icon.svg",
-  "/uomTrack/delete-icon.svg"
+  "/uomTrack/delete-icon.svg",
+  "/uomTrack/512.png",
+  "/uomTrack/favicon.ico"
 ]
 
 self.addEventListener("install", installEvent => {
