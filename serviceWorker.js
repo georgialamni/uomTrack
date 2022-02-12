@@ -1,11 +1,11 @@
 const staticUomTrack = "uom-track"
 const assets = [
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/uomTrack.js",
-  "/common.js",
-  "/uomApp.js",
+  "/uomTrack/index.html",
+  "/uomTrack/css/style.css",
+  "/uomTrack/uomTrack.js",
+  "/uomTrack/manifest.json",
+  "/uomTrack/copy-icon.svg",
+  "/uomTrack/delete-icon.svg"
 ]
 
 self.addEventListener("install", installEvent => {
